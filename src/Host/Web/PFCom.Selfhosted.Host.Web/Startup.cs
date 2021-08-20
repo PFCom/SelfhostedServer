@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using PFCom.Selfhosted.DataAccess;
+using PFCom.Selfhosted.DataAccess.EFCore;
 
 namespace PFCom.Selfhosted.Host.Web
 {
@@ -16,9 +19,22 @@ namespace PFCom.Selfhosted.Host.Web
 
         public IConfiguration Configuration { get; }
 
+        private void configureServices_database(IServiceCollection services)
+        {
+            services.AddDbContext<DataContext>(
+                x => x.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")),
+                ServiceLifetime.Scoped);
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+        }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            this.configureServices_database(services);
+
+            services.RegisterRepositories();
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
