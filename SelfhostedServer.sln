@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{5059F098-642A-42A7-99D8-A3E2AEDB09C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{DB66D078-3AEE-49F8-B8A9-ED99441AE636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Host.Web", "src\Host\Web\PFCom.Selfhosted.Host.Web\PFCom.Selfhosted.Host.Web.csproj", "{5A8D1922-09BD-4A01-B520-4278D543E78C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CE7B0627-3504-4D60-84AF-7D2132E5E61A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{E25F8309-5EEA-42D5-AAC6-C9513F0514F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.DataAccess", "src\DataAccess\PFCom.Selfhosted.DataAccess\PFCom.Selfhosted.DataAccess.csproj", "{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Core", "src\PFCom.Selfhosted.Core\PFCom.Selfhosted.Core.csproj", "{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A4ADCD99-3841-49F7-A951-FEA03E43CFC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{6F9EA7DE-88AA-4F30-A8B0-4337D15C3BDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{97EA4AEB-1978-4ECD-B6E7-58E56AF2615C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{18D4CC05-F9CA-4E60-B193-1A0AE637F0D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Host.Web.Tests", "test\Host\Web\PFCom.Selfhosted.Host.Web.Tests\PFCom.Selfhosted.Host.Web.Tests.csproj", "{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Lib", "src\PFCom.Selfhosted.Lib\PFCom.Selfhosted.Lib.csproj", "{7DAA879A-159F-47D8-9F9A-9BA2970926C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.DataAccess.EFCore", "src\DataAccess\PFCom.Selfhosted.DataAccess.EFCore\PFCom.Selfhosted.DataAccess.EFCore.csproj", "{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A8D1922-09BD-4A01-B520-4278D543E78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8D1922-09BD-4A01-B520-4278D543E78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8D1922-09BD-4A01-B520-4278D543E78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8D1922-09BD-4A01-B520-4278D543E78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAA879A-159F-47D8-9F9A-9BA2970926C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAA879A-159F-47D8-9F9A-9BA2970926C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAA879A-159F-47D8-9F9A-9BA2970926C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAA879A-159F-47D8-9F9A-9BA2970926C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB66D078-3AEE-49F8-B8A9-ED99441AE636} = {5059F098-642A-42A7-99D8-A3E2AEDB09C4}
+		{5A8D1922-09BD-4A01-B520-4278D543E78C} = {DB66D078-3AEE-49F8-B8A9-ED99441AE636}
+		{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06} = {E25F8309-5EEA-42D5-AAC6-C9513F0514F1}
+		{6F9EA7DE-88AA-4F30-A8B0-4337D15C3BDC} = {A4ADCD99-3841-49F7-A951-FEA03E43CFC2}
+		{97EA4AEB-1978-4ECD-B6E7-58E56AF2615C} = {6F9EA7DE-88AA-4F30-A8B0-4337D15C3BDC}
+		{18D4CC05-F9CA-4E60-B193-1A0AE637F0D8} = {A4ADCD99-3841-49F7-A951-FEA03E43CFC2}
+		{834A03F2-D672-4F6D-A6EB-1109B3ED7E60} = {97EA4AEB-1978-4ECD-B6E7-58E56AF2615C}
+		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56} = {E25F8309-5EEA-42D5-AAC6-C9513F0514F1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34BEF13A-4D07-4F01-993C-598CF3127D1F}
+	EndGlobalSection
+EndGlobal
