@@ -4,12 +4,12 @@ on: [ push, pull_request ]
 
 jobs:
   strategy:
-    runs-on: ${{ matrix.os }}
+  build:
     matrix:
       os: [ macos-latest, ubuntu-latest, windows-latest ]
       dotnet-version: [ '5.0.x' ]
-  build:
-    steps:    
+    runs-on: ${{ matrix.os }}
+    steps:
     - uses: actions/checkout@v2
     - name: Setup .NET SDK on system ${{ matrix.os }}
       uses: actions/setup-dotnet@v1
