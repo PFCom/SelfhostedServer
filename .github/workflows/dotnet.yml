@@ -4,10 +4,10 @@ on: [ push, pull_request ]
 
 jobs:
   strategy:
+    runs-on: ${{ matrix.os }}
     matrix:
       os: [ macos-latest, ubuntu-latest, windows-latest ]
       dotnet-version: [ '5.0.x' ]
-  runs-on: ${{ matrix.os }}
   build:
     steps:    
     - uses: actions/checkout@v2
