@@ -1,25 +1,23 @@
 name: .NET
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [ push, pull_request ]
 
 jobs:
+  strategy:
+    matrix:
+      os: [ macos-latest, ubuntu-latest, windows-latest ]
+      dotnet-version: [ '5.0.x' ]
+  runs-on: ${{ matrix.os }}
   build:
-
-    runs-on: ubuntu-latest
-
-    steps:
+    steps:    
     - uses: actions/checkout@v2
-    - name: Setup .NET
+    - name: Setup .NET SDK on system ${{ matrix.os }}
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: ${{ matrix.dotnet-version }}
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-restore --verbosity normal
