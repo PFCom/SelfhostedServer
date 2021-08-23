@@ -3,11 +3,11 @@ name: .NET
 on: [ push, pull_request ]
 
 jobs:
-  strategy:
   build:
-    matrix:
-      os: [ macos-latest, ubuntu-latest, windows-latest ]
-      dotnet-version: [ '5.0.x' ]
+    strategy:
+      matrix:
+        os: [ macos-latest, ubuntu-latest, windows-latest ]
+        dotnet-version: [ '5.0.x' ]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
