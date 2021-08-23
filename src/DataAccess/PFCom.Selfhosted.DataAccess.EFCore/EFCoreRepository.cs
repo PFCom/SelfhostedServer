@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PFCom.Selfhosted.DataAccess.EFCore
 {
-    public class EfCoreRepository<T> : IRepository<T> where T : class
+    public class EfCoreRepository<T> : IBaseRepository<T> where T : class
     {
         private DbSet<T> DbSet { get; }
 
-        public EfCoreRepository(DbContext context)
+        public EfCoreRepository(DataContext context)
         {
             this.DbSet = context.Set<T>();
         }
@@ -51,6 +51,11 @@ namespace PFCom.Selfhosted.DataAccess.EFCore
             }
 
             this.DbSet.Remove(entity);
+        }
+
+        public void DeleteAll()
+        {
+            this.DbSet.RemoveRange(this.DbSet);
         }
     }
 }

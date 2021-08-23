@@ -4,12 +4,15 @@ namespace PFCom.Selfhosted.DataAccess
 {
     public interface IUnitOfWork
     {
-        public ITrasaction BeginTransaction();
+        public ITransaction BeginTransaction();
 
-        public Task<ITrasaction> BeginTransactionAsync();
+        public Task<ITransaction> BeginTransactionAsync();
         
         public void Complete();
 
         public Task CompleteAsync();
+        public void SaveChanges();
+
+        public Task SaveChangesAsync();
     }
 }

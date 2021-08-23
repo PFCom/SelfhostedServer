@@ -7,23 +7,23 @@ namespace PFCom.Selfhosted.DataAccess.EFCore
     {
         private DbContext _context { get; }
 
-        public UnitOfWork(DbContext context)
+        public UnitOfWork(DataContext context)
         {
             this._context = context;
         }
         
-        public ITrasaction BeginTransaction()
+        public ITransaction BeginTransaction()
         {
             var trans = this._context.Database.BeginTransaction();
 
-            return new Trasaction(trans);
+            return new Transaction(trans);
         }
 
-        public async Task<ITrasaction> BeginTransactionAsync()
+        public async Task<ITransaction> BeginTransactionAsync()
         {
             var trans = await this._context.Database.BeginTransactionAsync();
 
-            return new Trasaction(trans);
+            return new Transaction(trans);
         }
 
         public void Complete()
@@ -32,6 +32,16 @@ namespace PFCom.Selfhosted.DataAccess.EFCore
         }
 
         public Task CompleteAsync()
+        {
+            return this._context.SaveChangesAsync();
+        }
+
+        public void SaveChanges()
+        {
+            this._context.SaveChanges();
+        }
+
+        public Task SaveChangesAsync()
         {
             return this._context.SaveChangesAsync();
         }
