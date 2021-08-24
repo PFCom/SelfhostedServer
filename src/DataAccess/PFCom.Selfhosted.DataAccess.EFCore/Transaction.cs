@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace PFCom.Selfhosted.DataAccess.EFCore
 {
-    public class Trasaction : ITrasaction
+    public class Transaction : ITransaction
     {
         private IDbContextTransaction _transaction { get; }
 
-        public Trasaction(IDbContextTransaction transaction)
+        public Transaction(IDbContextTransaction transaction)
         {
             this._transaction = transaction;
         }

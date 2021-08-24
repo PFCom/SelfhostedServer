@@ -7,15 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{5059F098-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{DB66D078-3AEE-49F8-B8A9-ED99441AE636}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Host.Web", "src\Host\Web\PFCom.Selfhosted.Host.Web\PFCom.Selfhosted.Host.Web.csproj", "{5A8D1922-09BD-4A01-B520-4278D543E78C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Host.Web", "src\Host\Web\PFCom.Selfhosted.Host.Web\PFCom.Selfhosted.Host.Web.csproj", "{5A8D1922-09BD-4A01-B520-4278D543E78C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CE7B0627-3504-4D60-84AF-7D2132E5E61A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{E25F8309-5EEA-42D5-AAC6-C9513F0514F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.DataAccess", "src\DataAccess\PFCom.Selfhosted.DataAccess\PFCom.Selfhosted.DataAccess.csproj", "{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.DataAccess", "src\DataAccess\PFCom.Selfhosted.DataAccess\PFCom.Selfhosted.DataAccess.csproj", "{4DF7CAE1-FEA1-4CF3-AE64-6A9A6603BE06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Core", "src\PFCom.Selfhosted.Core\PFCom.Selfhosted.Core.csproj", "{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Core", "src\PFCom.Selfhosted.Core\PFCom.Selfhosted.Core.csproj", "{92C91ED1-A28D-4DB5-9536-AAFA4806A77F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A4ADCD99-3841-49F7-A951-FEA03E43CFC2}"
 EndProject
@@ -25,11 +25,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{97EA4AEB-197
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{18D4CC05-F9CA-4E60-B193-1A0AE637F0D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Host.Web.Tests", "test\Host\Web\PFCom.Selfhosted.Host.Web.Tests\PFCom.Selfhosted.Host.Web.Tests.csproj", "{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Host.Web.Tests", "test\Host\Web\PFCom.Selfhosted.Host.Web.Tests\PFCom.Selfhosted.Host.Web.Tests.csproj", "{834A03F2-D672-4F6D-A6EB-1109B3ED7E60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Lib", "src\PFCom.Selfhosted.Lib\PFCom.Selfhosted.Lib.csproj", "{7DAA879A-159F-47D8-9F9A-9BA2970926C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Lib", "src\PFCom.Selfhosted.Lib\PFCom.Selfhosted.Lib.csproj", "{7DAA879A-159F-47D8-9F9A-9BA2970926C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.DataAccess.EFCore", "src\DataAccess\PFCom.Selfhosted.DataAccess.EFCore\PFCom.Selfhosted.DataAccess.EFCore.csproj", "{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.DataAccess.EFCore", "src\DataAccess\PFCom.Selfhosted.DataAccess.EFCore\PFCom.Selfhosted.DataAccess.EFCore.csproj", "{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Application.User", "src\Application\PFCom.Selfhosted.Application.User\PFCom.Selfhosted.Application.User.csproj", "{B24CCC76-4F55-4A7B-9C09-EDCC06CFE426}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Application", "src\Application\PFCom.Selfhosted.Application\PFCom.Selfhosted.Application.csproj", "{82DB2F5A-5DCA-4584-A4D5-5EA45657C2BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Host.Web.Auth", "src\Host\Web\PFCom.Selfhosted.Host.Web.Auth\PFCom.Selfhosted.Host.Web.Auth.csproj", "{B89A13C9-56C6-4135-85EC-E615167FFC4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PFCom.Selfhosted.Application.Hash", "src\Application\PFCom.Selfhosted.Application.Hash\PFCom.Selfhosted.Application.Hash.csproj", "{28C20EAA-8F6C-485E-958C-81E945BF3289}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34C9AD47-CE41-4C1B-8B5A-562AC5D30708}"
+	ProjectSection(SolutionItems) = preProject
+		AddMigration.bat = AddMigration.bat
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Application.User.Tests", "test\Application\PFCom.Selfhosted.Application.User.Tests\PFCom.Selfhosted.Application.User.Tests.csproj", "{4F0F0720-E730-4160-8C4D-95BAB638B5BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFCom.Selfhosted.Host.Web.Tests.Auth", "test\Host\Web\PFCom.Selfhosted.Host.Web.Tests.Auth\PFCom.Selfhosted.Host.Web.Tests.Auth.csproj", "{9A37E215-FA3A-426D-AA7A-AABA2841E7B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +78,30 @@ Global
 		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24CCC76-4F55-4A7B-9C09-EDCC06CFE426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24CCC76-4F55-4A7B-9C09-EDCC06CFE426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24CCC76-4F55-4A7B-9C09-EDCC06CFE426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24CCC76-4F55-4A7B-9C09-EDCC06CFE426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DB2F5A-5DCA-4584-A4D5-5EA45657C2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DB2F5A-5DCA-4584-A4D5-5EA45657C2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DB2F5A-5DCA-4584-A4D5-5EA45657C2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DB2F5A-5DCA-4584-A4D5-5EA45657C2BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89A13C9-56C6-4135-85EC-E615167FFC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89A13C9-56C6-4135-85EC-E615167FFC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89A13C9-56C6-4135-85EC-E615167FFC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89A13C9-56C6-4135-85EC-E615167FFC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C20EAA-8F6C-485E-958C-81E945BF3289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C20EAA-8F6C-485E-958C-81E945BF3289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C20EAA-8F6C-485E-958C-81E945BF3289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C20EAA-8F6C-485E-958C-81E945BF3289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0F0720-E730-4160-8C4D-95BAB638B5BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0F0720-E730-4160-8C4D-95BAB638B5BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0F0720-E730-4160-8C4D-95BAB638B5BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0F0720-E730-4160-8C4D-95BAB638B5BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A37E215-FA3A-426D-AA7A-AABA2841E7B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A37E215-FA3A-426D-AA7A-AABA2841E7B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A37E215-FA3A-426D-AA7A-AABA2841E7B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A37E215-FA3A-426D-AA7A-AABA2841E7B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +115,12 @@ Global
 		{18D4CC05-F9CA-4E60-B193-1A0AE637F0D8} = {A4ADCD99-3841-49F7-A951-FEA03E43CFC2}
 		{834A03F2-D672-4F6D-A6EB-1109B3ED7E60} = {97EA4AEB-1978-4ECD-B6E7-58E56AF2615C}
 		{0AED6E20-F1F0-4FD7-ACDD-98EC35DC2E56} = {E25F8309-5EEA-42D5-AAC6-C9513F0514F1}
+		{B24CCC76-4F55-4A7B-9C09-EDCC06CFE426} = {CE7B0627-3504-4D60-84AF-7D2132E5E61A}
+		{82DB2F5A-5DCA-4584-A4D5-5EA45657C2BF} = {CE7B0627-3504-4D60-84AF-7D2132E5E61A}
+		{B89A13C9-56C6-4135-85EC-E615167FFC4F} = {DB66D078-3AEE-49F8-B8A9-ED99441AE636}
+		{28C20EAA-8F6C-485E-958C-81E945BF3289} = {CE7B0627-3504-4D60-84AF-7D2132E5E61A}
+		{4F0F0720-E730-4160-8C4D-95BAB638B5BA} = {18D4CC05-F9CA-4E60-B193-1A0AE637F0D8}
+		{9A37E215-FA3A-426D-AA7A-AABA2841E7B4} = {97EA4AEB-1978-4ECD-B6E7-58E56AF2615C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34BEF13A-4D07-4F01-993C-598CF3127D1F}

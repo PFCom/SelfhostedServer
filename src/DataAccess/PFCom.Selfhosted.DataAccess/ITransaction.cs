@@ -2,7 +2,7 @@
 
 namespace PFCom.Selfhosted.DataAccess
 {
-    public interface ITrasaction
+    public interface ITransaction
     {
         public void Commit();
 

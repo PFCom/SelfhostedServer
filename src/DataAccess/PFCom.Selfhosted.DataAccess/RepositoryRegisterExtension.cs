@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using PFCom.Selfhosted.DataAccess.Repositories.Users;
+using PFCom.Selfhosted.DataAccess.RepositoryImpls.Users;
 
 namespace PFCom.Selfhosted.DataAccess
 {
@@ -6,7 +8,8 @@ namespace PFCom.Selfhosted.DataAccess
     {
         public static void RegisterRepositories(this IServiceCollection services)
         {
-            //services.AddScoped(typeof(  HERE INTERFACE OF REPOSITORY  ), typeof(  HERE THE IMPLEMENTATION CLASS OF REPOSITORY  ));
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ILocalUserRepository, LocalUserRepository>();
         }
     }
 }

@@ -4,9 +4,9 @@ namespace PFCom.Selfhosted.DataAccess
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private IRepository<TEntity> _repository { get; }
+        private IBaseRepository<TEntity> _repository { get; }
 
-        public Repository(IRepository<TEntity> repository)
+        protected Repository(IBaseRepository<TEntity> repository)
         {
             this._repository = repository;
         }
@@ -20,5 +20,6 @@ namespace PFCom.Selfhosted.DataAccess
         public void Update(TEntity entity) => this._repository.Update(entity);
 
         public void Delete(TEntity entity) => this._repository.Delete(entity);
+        public void DeleteAll() => this._repository.DeleteAll();
     }
 }
