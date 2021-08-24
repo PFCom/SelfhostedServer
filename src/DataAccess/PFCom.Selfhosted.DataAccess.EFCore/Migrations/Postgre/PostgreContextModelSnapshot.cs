@@ -25,10 +25,14 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.Migrations.Postgre
                         .HasColumnType("uuid");
 
                     b.Property<string>("Password")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("PasswordSalt")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("character varying(128)");
 
                     b.HasKey("Id");
 
@@ -42,10 +46,14 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.Migrations.Postgre
                         .HasColumnType("uuid");
 
                     b.Property<string>("Nickname")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("character varying(32)");
 
                     b.Property<string>("Type_str")
-                        .HasColumnType("text")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)")
                         .HasColumnName("Type");
 
                     b.HasKey("Id");

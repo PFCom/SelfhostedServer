@@ -22,9 +22,13 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.Migrations.Sqlite
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PasswordSalt")
+                        .IsRequired()
+                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -39,9 +43,13 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.Migrations.Sqlite
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Nickname")
+                        .IsRequired()
+                        .HasMaxLength(32)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Type_str")
+                        .IsRequired()
+                        .HasMaxLength(16)
                         .HasColumnType("TEXT")
                         .HasColumnName("Type");
 

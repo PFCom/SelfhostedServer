@@ -16,6 +16,14 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.EntityBuilders.Users
                 .WithOne()
                 .HasForeignKey<LocalUser>(x => x.Id);
             builder.Navigation(x => x.User).AutoInclude();
+
+            builder.Property(x => x.Password)
+                .HasMaxLength(128)
+                .IsRequired();
+
+            builder.Property(x => x.PasswordSalt)
+                .HasMaxLength(128)
+                .IsRequired();
         }
     }
 }

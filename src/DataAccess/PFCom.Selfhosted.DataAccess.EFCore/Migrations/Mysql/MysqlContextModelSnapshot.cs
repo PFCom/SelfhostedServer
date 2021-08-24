@@ -23,10 +23,14 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.Migrations.Mysql
                         .HasColumnType("char(36)");
 
                     b.Property<string>("Password")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("PasswordSalt")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.HasKey("Id");
 
@@ -40,10 +44,14 @@ namespace PFCom.Selfhosted.DataAccess.EFCore.Migrations.Mysql
                         .HasColumnType("char(36)");
 
                     b.Property<string>("Nickname")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("varchar(32)");
 
                     b.Property<string>("Type_str")
-                        .HasColumnType("longtext")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("varchar(16)")
                         .HasColumnName("Type");
 
                     b.HasKey("Id");
