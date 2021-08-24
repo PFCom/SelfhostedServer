@@ -3,7 +3,7 @@ name: .NET
 on: [ push, pull_request ]
 
 jobs:
-  build:
+  run_tests:
     strategy:
       matrix:
         os: [ macos-latest, ubuntu-latest, windows-latest ]
